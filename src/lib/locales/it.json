@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Marco Mastrodonato",
+    "menu": {
+      "skills": "Competenze",
+      "projects": "Progetti",
+      "contacts": "Contatti"
+    },
+    "home": {
+      "title": "Benvenuti nella mia homepage",
+      "body": "Sono un senior full stack developer, con esperienze nel settore assicurativo (17 anni), nel turismo (1 anno), nella domotica (2 anni), nella firma elettronica e vendita di servizi online (3 anni). In vari progetti ho assunto anche il ruolo di team lead."
+    },
+    "skills": {
+      "title": "Le mie competenze",
+      "body": "Ho esperienza professionale sia lato backend che frontend. Dalla gestione e ottimizzazione di processi aziendali alla creazione di applicazioni web complete."
+    },
+    "projects": {
+      "title": "I progetti a cui ho lavorato",
+      "body": "I progetti che descrivo di seguito hanno caratteristiche che rispecchiano il business dell'azienda presso la quale sono stati svolti. In comune hanno il mio metodo pragmatico focalizzato sul risultato. Ho raggiunto l'obiettivo in ogni progetto e le mie referenze (che posso fornire a richiesta) possono confermarlo."
+    },
+    "footer": {
+      "tellAFriend": "Passaparola"
+    }
+  }
+}

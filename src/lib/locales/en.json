@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Marco Mastrodonato",
+    "menu": {
+      "skills": "Skills",
+      "projects": "Projects",
+      "contacts": "Contacts"
+    },
+    "home": {
+      "title": "Welcome to my homepage",
+      "body": "I am a senior full stack developer, with experience in the insurance BUSINESS (17 years), tourism (1 year), home automation (2 years), electronic signature and other online services (3 years). In various projects I also assumed the role of team lead."
+    },
+    "skills": {
+      "title": "My skills",
+      "body": "I have both backend and frontend professional experience. From the management and optimization of business processes to the creation of complete web applications."
+    },
+    "projects": {
+      "title": "Projects I worked on",
+      "body": "The projects I describe here have characteristics that reflect the business of the company where they were carried out. They have in common my pragmatic method focused on results. I have achieved the goal in every project and my references (which I can provide on request) can confirm it."
+    },
+    "footer": {
+      "tellAFriend": "Tell a friend"
+    }
+  }
+}
