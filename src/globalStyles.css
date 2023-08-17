@@ -161,9 +161,17 @@ header .btn {
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
-.home-container > .logo > img {
-  border-radius: var(--card-border-radius);
+.home-container > .logo {
+  padding-right: 1rem;
+  background-color: black;
 }
+.home-container > .description {
+  padding-left: 1rem;
+}
+/* .home-container > .logo > img {
+  display: none;
+   border-radius: var(--card-border-radius);
+} */
 
 /* SKILLS COMPONENT */
 .skills-container { padding: 3rem 0; }

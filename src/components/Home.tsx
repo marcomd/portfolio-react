@@ -5,6 +5,8 @@ import { DEBOUNCE_TIMEOUT } from "../lib/constants";
 import { useTranslation } from "react-i18next";
 import { SharedContext } from "../contexts/SharedContext";
 
+import LogoCanvas from "./LogoCanvas";
+
 export default function Home() {
   const { mobile } = useContext(SharedContext)
   const { t } = useTranslation();
@@ -17,8 +19,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="logo">
-        
-        <img src="home.jpg" alt="Portrait" />
+        <LogoCanvas></LogoCanvas>
       </div>
       <div className="description">
         <h2 className="title">{t('home.title')}</h2>
