@@ -9,7 +9,7 @@ const Skills = React.lazy(() =>
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(module as any);
-      }, 1000);
+      }, 500);
     });
   })
 );
@@ -19,7 +19,17 @@ const Projects = React.lazy(() =>
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(module as any);
-      }, 1000);
+      }, 500);
+    });
+  })
+);
+
+const Contacts = React.lazy(() => 
+  import("./Contacts").then((module) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(module as any);
+      }, 500);
     });
   })
 );
@@ -33,7 +43,7 @@ return (
       <Route path='/' element={<Home />} />
       <Route path='/skills' element={<Skills />} />
       <Route path='/projects' element={<Projects />} />
-      <Route path='/contacts' element={<Skills />} />
+      <Route path='/contacts' element={<Contacts />} />
     </Routes>
   </React.Suspense>
 );

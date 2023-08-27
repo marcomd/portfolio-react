@@ -13,7 +13,7 @@ class Effect {
   mouse: MouseAttributes;
   handleMouseMove: any;
 
-  constructor(left: number, top: number, width: number, height: number, image: HTMLImageElement) {
+  constructor(left: number, top: number, width: number, height: number, image: HTMLImageElement, gap: number = 4) {
     this.width = width;
     this.height = height;
     this.particleArray = [];
@@ -22,14 +22,13 @@ class Effect {
     this.centerY = this.height * 0.5;
     this.x = this.centerX - this.image.width * 0.5;
     this.y = this.centerY - this.image.height * 0.5;
-    this.gap = 4;
+    this.gap = gap;
     this.mouse = {
       x: undefined,
       y: undefined,
       radius: 4000
     }
     this.handleMouseMove = (event: MouseEvent) => {
-      // const { x: canvasX, y: canvasY } = canvas.getBoundingClientRect();
       this.mouse.x = event.x - left;
       this.mouse.y = event.y - top;
       //console.log(`mouse:(${this.mouse.x}, ${this.mouse.y})`);
@@ -38,15 +37,12 @@ class Effect {
   }
 
   init(ctx: CanvasRenderingContext2D) {
-    // for(let i = 0; i < 100; i++) {
-    //   this.particleArray.push(new Particle(this));
-    // }
     ctx.drawImage(this.image, this.x, this.y);
     const context2dSettings = { willReadFrequently: true } as ImageDataSettings
     const pixels = ctx.getImageData(0, 0, this.width, this.height, context2dSettings).data;
     for (let y = 0; y < this.height; y += this.gap) {
       for (let x = 0; x < this.width; x += this.gap) {
-        const index = (y * this.width + x) * 4
+        const index = (y * this.width + x) * 4;
         const red = pixels[index];
         const green = pixels[index+1];
         const blue = pixels[index+2];
@@ -62,20 +58,19 @@ class Effect {
   }
 
   draw(ctx: CanvasRenderingContext2D) {
-    this.particleArray.forEach(particle => particle.draw(ctx))
-    //ctx.drawImage(this.image, this.x, this.y);
+    this.particleArray.forEach(particle => particle.draw(ctx));
   }
 
   update() {
-    this.particleArray.forEach(particle => particle.update())
+    this.particleArray.forEach(particle => particle.update());
   }
 
   warp() {
-    this.particleArray.forEach(particle => particle.warp())
+    this.particleArray.forEach(particle => particle.warp());
   }
 
   dismiss() {
-    window.removeEventListener("mousemove", this.handleMouseMove)
+    window.removeEventListener("mousemove", this.handleMouseMove);
   }
 }
 

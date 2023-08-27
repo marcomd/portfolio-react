@@ -17,13 +17,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home-container">
+    <div className="home-wrapper">
       <div className="logo">
         <LogoCanvas></LogoCanvas>
       </div>
       <div className="description">
         <h2 className="title">{t('home.title')}</h2>
-        <div className="body">{t('home.body')}</div>
+        <div className="body">{t('home.introduction')}</div>
+        <br /><hr /><br />
+        <div className="body">{t('home.career')}</div>
+        <br />
+        <div className="body">{t('home.personality')}</div>
+        <br />
+        <br />
+        <div className="body">{t('home.hobbies')}</div>
+        <br />
+        <div className="body">{t('home.notes')}</div>
       </div>
     </div>
   );

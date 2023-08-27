@@ -1,4 +1,4 @@
-![](./thumbnail.png)
+![](./public/thumbnail.jpg)
 
 # Portfolio
 

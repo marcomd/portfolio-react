@@ -18,7 +18,7 @@ export default function Header({ children }: Props) {
     <header>
       <h2 className="logo">{children}</h2>
       <nav className="navigation">
-        <Link to="/">Home</Link>
+        <Link to="/">{t('menu.home')}</Link>
         <Link to="/skills">{t('menu.skills')}</Link>
         <Link to="/projects">{t('menu.projects')}</Link>
         <Link to="/contacts">{t('menu.contacts')}</Link>

@@ -2,13 +2,18 @@
   "app": {
     "title": "Marco Mastrodonato",
     "menu": {
-      "skills": "Competenze",
+      "home": "Me",
+      "skills": "Superpoteri",
       "projects": "Progetti",
       "contacts": "Contatti"
     },
     "home": {
       "title": "Benvenuti nella mia homepage",
-      "body": "Sono un senior full stack developer, con esperienze nel settore assicurativo (17 anni), nel turismo (1 anno), nella domotica (2 anni), nella firma elettronica e vendita di servizi online (3 anni). In vari progetti ho assunto anche il ruolo di team lead."
+      "introduction": "Sono un senior full stack developer e ho ricoperto anche il ruolo di team lead in vari progetti. Sono piu' orientato alla progettazione di servizi ma ho esperienza anche con web app e progettazione di UI.",
+      "career": "Ho lavorato molti anni nel settore assicurativo (17), nel turismo (1 anno), nella domotica (2 anni), nella firma elettronica / vendita di servizi online (3 anni) e altro.",
+      "personality": "Sono una persona calma e precisa che raggiunge sempre gli obiettivi. Mi piace lavorare in modo organizzato, puntando sulla qualita'.",
+      "hobbies": "Nel mio tempo libero mi piace cucinare, leggere, videogames, musica, serie tv, creare progetti software/hardware e in genere approfondire sulle nuove tecnologie.",
+      "notes": "Ho creato questa webapp da zero, come esperimento provando tecnologie diverse da quelle che uso abitualmente. E' un test e potreste trovare qualche bug che non occorre segnalarmi perche' si tratta di sviluppo continuo."
     },
     "skills": {
       "title": "Le mie competenze",
@@ -16,7 +21,46 @@
     },
     "projects": {
       "title": "I progetti a cui ho lavorato",
-      "body": "I progetti che descrivo di seguito hanno caratteristiche che rispecchiano il business dell'azienda presso la quale sono stati svolti. In comune hanno il mio metodo pragmatico focalizzato sul risultato. Ho raggiunto l'obiettivo in ogni progetto e le mie referenze (che posso fornire a richiesta) possono confermarlo."
+      "iubenda_tracking": {
+        "title": "Senior Backend Developer @iubenda",
+        "description": "Riferimento del team tracking e del servizio di event delivery. Sviluppo di servizi interni per la gestione di eventi applicativi e per interfacciare servizi esterni. Gestione dei dati su Mysql e Redis."
+      },
+      "foodcircle": {
+        "title": "Technical Lead & Full Stack Developer @foodcircle",
+        "description": "Gestione del team di sviluppo, review del codice e deploy in produzione. Sviluppo di servizi backend per l'integrazione di servizi esterni. Sviluppo di nuove funzioni da integrare nella UI, realizzata con Rails. Aggiornamento di Ruby dalla versione 2.5 a 3.1 e RubyOnRails dalla 5 alla 7. PostgreSQL."
+      },
+      "fractalgarden_otpservice": {
+        "title": "Technical Lead & Full Stack Developer @fractalgarden",
+        "description": "Gestione del progetto dalla fase zero fino alla commercializzazione. Creazione del backend in RubyOnRails 6 e del frontend in VueJs 2, con PostgreSQL e uso massiccio del websocket. Sviluppo full stack, dalla web app (homepage, user UI, shop etc) ai servizi backend core come il pricing, l'algoritmo di cifratura, della gestione degli OTP, del PDF col sigillo elettronico e altre caratteristiche previste dall'offerta commerciale. Link al sito https://www.otpservice.io"
+      },
+      "fractalgarden_italianway": {
+        "title": "Full Stack Developer @fractalgarden",
+        "description": "Sviluppo di funzionalita' legate al mondo del turismo come il checking online degli ospiti con riconoscimento da remoto, sviluppato in VueJs, la gestione degli accessi/dispositivi da remoto tramite dispositivi IoT, la generazione di contratti pdf dinamici e altro. In RubyOnRails e PostgreSQL. Link al sito https://www.italianway.house"
+      },
+      "fractalgarden_homy": {
+        "title": "PM & Backend Developer @fractalgarden",
+        "description": "Realizzazione e coordinamento di gran parte dello stack tecnologico per la gestione di dispositivi LoRa, realizzati in italia da azienda partner, per la gestione della casa: monitoraggio energetico, sicurezza e gestione ambientale. Inoltre e' stato realizzato un sistema per incentivare l'ottimizzazione dei carichi elettrici da parte degli utenti finali tramite app e premi. Backend in RubyOnRails 5 e app iOS/Android per il frontend. PostgreSQL, RabbitMQ per aggiornare le app in realtime, MQTT per interagire con i dispositivi IoT. Tecnologia LoRa per connettere i dispositivi alla basestation e su questa Yocto linux. Progetto su https://www.homy.green"
+      },
+      "ergoprevidenza": {
+        "title": "PM & Full Stack developer @Ergo Previdenza",
+        "description": "Gestione di fornitori esterni per la fornitura di servizi aziendali. Realizzazione di gestionali e software RPA in RubyOnRails per incrementare la produttivita' amministrativa. Windows e SQL Server. Facevo parte del team per seguire la normativa Solvency II. "
+      },
+      "bayerische": {
+        "title": "Full Stack developer @Bayerische Vita",
+        "description": "Creazione di varie applicazioni: per la liquidazione di polizze vita in Cobol/Cics e DB2/Vsam. Un'applicazione per la corrispondenza con i clienti in VB6 e SQL Server. Un'applicazione pr gestire le rimesse contabili e la riconciliazione bancaria delle agenzie, in VB6. Un'applicazione per l'emissione del modulo di adeguatezza ai clienti dopo l'acquisto di una polizza, in PHP. Altri progetti minori."
+      },
+      "consor": {
+        "title": "Junior software developer @Consor Srl",
+        "description": "Ho fatto parte del team che si occupava di gestire un software nella refezione. In Cobol su AS400 e DB2."
+      },
+      "ibm": {
+        "title": "Junior software develope @IBM Italia",
+        "description": "Sede di vimercate. Ho partecipato ad un progetto interno per la gestione di materiale aziendale in collaborazione con la sede di Lexington. Ho anche partecipato alla correzione del millennium bug su alcune procedure in PL1/DB2."
+      }
+    },
+    "contacts": {
+      "title": "I miei contatti",
+      "body": "Se vuoi contattarmi puoi usare questi canali"
     },
     "footer": {
       "tellAFriend": "Passaparola"

@@ -49,6 +49,10 @@ body {
   font-weight: 200;
 }
 
+body a, body a:visited, body a:hover {
+  color: var(--color-white);
+}
+
 .dark-mode {
   --color-white: #FFFFFF;
   --color-light: rgba(132, 139, 200, 0.18);
@@ -157,21 +161,17 @@ header .btn {
 /* --------------- */
 
 /* HOME COMPONENT */
-.home-container {
+.home-wrapper {
   display: grid;
   grid-template-columns: 2fr 2fr;
 }
-.home-container > .logo {
+.home-wrapper > .logo {
   padding-right: 1rem;
   background-color: black;
 }
-.home-container > .description {
+.home-wrapper > .description {
   padding-left: 1rem;
 }
-/* .home-container > .logo > img {
-  display: none;
-   border-radius: var(--card-border-radius);
-} */
 
 /* SKILLS COMPONENT */
 .skills-container { padding: 3rem 0; }
@@ -220,26 +220,75 @@ header .btn {
 
 
 /* PROJECT COMPONENT */
+.projects-wrapper { width: 950px; }
+
 .projects-container { 
   padding: 3rem 0;
-  display: flex;
+  /* display: flex;
   justify-content: start;
-  align-items: center;
-}
-.project-card { 
-  margin-right: 3rem;
-  width: var(--card-width);
+  align-items: center; */
 }
 
-.project-card > .title {
+.project-card { 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3rem;
+  width: var(--card-width);
+  width: 100%;
+  /* border-left: solid 0.5rem red;
+  border-radius: 0.2rem; */
+}
+
+.project-card > .project-logo {
+  padding: 0.5rem 1rem 0.3rem;
+  background-color: rgba(200, 200, 200, 0.2);
+  border-radius: var(--border-radius-2);
+  margin-right: 1rem;
+}
+
+.project-card > .project-logo > img {
+  width: 200px;
+}
+
+.project-card > .project-text > .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-card > .project-text > .title > .name {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.project-card > .project-text > .title > .date {
+  color: #7D8DA1;
 }
 
 
 
 /* CONTACT COMPONENT */
+.contacts-wrapper { width: 500px; }
+
+.contacts-container { 
+  padding: 3rem 0;
+}
+
+.contacts-container > ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.contacts-container > ul > li {
+  margin-bottom: 1rem;
+}
+
+ul li::before {
+  content: "👉 ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 
 
 /* FOOTER */
@@ -273,6 +322,11 @@ footer a {
 }
 
 .btn:hover {
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+.btn.selected {
   color: var(--color-dark);
   background: var(--color-white);
 }

@@ -20,7 +20,7 @@ export default function Skills() {
         <Skill name="Html" logo="html5.png" level={90}></Skill>
         <Skill name="Css" logo="css3.png" level={70}></Skill>
         <Skill name="Javascript" logo="js.png" level={80}></Skill>
-        <Skill name="Typescript" logo="ts.png" level={70}></Skill>
+        <Skill name="Typescript" logo="ts.png" level={80}></Skill>
         <Skill name="VueJs" logo="vuejs.png" level={80}></Skill>
         <Skill name="React" logo="react.png" level={80}></Skill>
       </div>

@@ -1,7 +1,7 @@
 const DEBOUNCE_TIMEOUT = 800;
 const SITE_NAME = "Marco Mastrodonato's portfolio"
 const SITE_URL = "https://marco-mastrodonato.vercel.app"
-const SITE_THUMBNAIL = `${SITE_URL}/thumbnail.png`
+const SITE_THUMBNAIL = `${SITE_URL}/public/thumbnail.jpg`
 
 export { 
   DEBOUNCE_TIMEOUT, 

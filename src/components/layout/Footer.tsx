@@ -30,11 +30,11 @@ import {
 
 import { useTranslation } from "react-i18next";
 
-const writeUsTemplate = `mailto:m.mastrodonato+lordonetto@gmail.com?subject=Greetings!&body=Dear Marco,%0D%0A%0D%0A[insert cute message here] 😍`
+const writeUsTemplate = `mailto:m.mastrodonato+portfolio@gmail.com?subject=Greetings!&body=Dear Marco,%0D%0A%0D%0A[insert cute message here] 😍`
 const tellAFriend = {
-  title: "Un moderno calcolatore di stipendio",
-  body: "Fico questo calcolatore di stipendio 🤟",
-  hashtags: ["calcolatore", "stipendio", "netto", "cool"],
+  title: "I visited Marco's homepage",
+  body: "Hey, this is the homepage a true nerd should have 🤟",
+  hashtags: ["homepage", "full stack developer", "nerd", "cool"],
   hashtag: function() { return this.hashtags.map(t => `#${t}`).join(' ') },
   siteName: SITE_NAME,
   url: SITE_URL,
