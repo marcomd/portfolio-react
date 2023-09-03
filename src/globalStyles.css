@@ -172,7 +172,10 @@ header .btn {
 }
 .home-wrapper > .logo {
   padding-right: 1rem;
-  /* background-color: var(--color-background); */
+}
+.home-wrapper .logo .logo-section {
+  border-radius: var(--card-border-radius);
+  background-color: black;
 }
 .home-wrapper > .description {
   padding-left: 1rem;
