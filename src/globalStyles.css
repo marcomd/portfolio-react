@@ -14,8 +14,11 @@
   --color-info-dark: #7D8DA1;
   --color-dark: #363949;
 
+  --color-text: #202528;
+  --color-text-alternative: #404548;
   --color-white: #202528;
   --color-background: #dddddd;
+  --color-background-alternative: #ffffff;
   --color-light: rgba(0, 0, 0, 0.4);
   --box-shadow: 0 2rem 3rem var(--color-light);
 
@@ -54,11 +57,13 @@ body a, body a:visited, body a:hover {
 }
 
 .dark-mode {
-  --color-white: #FFFFFF;
+  --color-text: #eeeeee;
+  --color-text-alternative: #ffffff;
   --color-light: rgba(132, 139, 200, 0.18);
   --color-background: #181a1e;
+  --color-background-alternative: #000000;
   --box-shadow: 0 2rem 3rem var(--color-light);
-  --background-image: url('assets/background-dark.jpg');
+  --background-image: url('background-dark.jpg');
   --background-filter: brightness(50%);
   background-color: var(--color-background);
 }
@@ -84,7 +89,7 @@ header {
 
 header > .logo {
   font-size: 2rem;
-  color: var(--color-white);
+  color: var(--color-text);
   user-select: none;
 }
 
@@ -97,7 +102,7 @@ header > .navigation {
 header > .navigation a {
   position: relative;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--color-text);
   text-decoration: none;
   margin-left: 2rem;
 }
@@ -112,7 +117,7 @@ header > .navigation a::after {
   position: absolute;
   width: 100%;
   height: 0.2rem;
-  background: var(--color-white);
+  background: var(--color-text);
   border-radius: 0.5rem;
   left: 0;
   bottom: -0.3rem;
@@ -150,7 +155,7 @@ header .btn {
   align-items: center;
   padding: 6rem 2rem;
   width: 80%;
-  border: 0.2rem solid var(--color-white);
+  border: 0.2rem solid var(--color-text);
   border-radius: var(--card-border-radius);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -167,7 +172,7 @@ header .btn {
 }
 .home-wrapper > .logo {
   padding-right: 1rem;
-  background-color: black;
+  /* background-color: var(--color-background); */
 }
 .home-wrapper > .description {
   padding-left: 1rem;
@@ -304,7 +309,7 @@ footer .row {
 }
 
 footer a {
-  color: var(--color-white)
+  color: var(--color-text)
 }
 
 /* GENERIC CLASS */
@@ -312,21 +317,21 @@ footer a {
   width: 130px;
   height: 50px;
   background: transparent;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-text);
   outline: none;
   border-radius: var(--border-radius-2);
   cursor: pointer;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--color-text);
   transition: 0.5s;
 }
 
 .btn:hover {
-  color: var(--color-dark);
-  background: var(--color-white);
+  color: var(--color-text-alternative);
+  background: var(--color-background-alternative);
 }
 
 .btn.selected {
-  color: var(--color-dark);
-  background: var(--color-white);
+  color: var(--color-text-alternative);
+  background: var(--color-background-alternative);
 }
