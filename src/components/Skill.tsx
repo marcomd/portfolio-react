@@ -15,7 +15,7 @@ export default function Skill({name, logo, level}: Props) {
   return (
     <div className="skill-container">
       <div className="skill-row">
-        <div className="logo"><img src={logo} alt={name} /></div>
+        <div className="logo"><img src={`techs/${logo}`} alt={name} /></div>
         <div className="name">{name}</div>
       </div>
       <div className="skill-row">

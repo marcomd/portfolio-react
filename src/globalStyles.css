@@ -58,7 +58,7 @@ body a, body a:visited, body a:hover {
   --color-light: rgba(132, 139, 200, 0.18);
   --color-background: #181a1e;
   --box-shadow: 0 2rem 3rem var(--color-light);
-  --background-image: url('background-dark.jpg');
+  --background-image: url('assets/background-dark.jpg');
   --background-filter: brightness(50%);
   background-color: var(--color-background);
 }
