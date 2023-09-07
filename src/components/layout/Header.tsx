@@ -13,7 +13,7 @@ interface Props {
 export default function Header({ children }: Props) {
   const { mobile } = useContext(SharedContext)
   const { t } = useTranslation();
-  const [menuVisible, setMenuVisible] = useState(true);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenuVisible = () => {
     setMenuVisible( visible => !visible)
