@@ -3,10 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import { Effect } from "../lib/canvasEffect";
 
 const StyledCanvasContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const StyledCanvasTitle = styled.canvas`
@@ -98,7 +99,7 @@ export default function LogoCanvas() {
       </div>
       <div className="logo-section">
         <img id="logo" src="home_lite.jpg" alt="Portrait" style={{display: 'none'}} ref={refImage} />
-        <StyledCanvasTitle ref={refCanvas} width="400" height="500" onClick={warp} />
+        <StyledCanvasTitle ref={refCanvas} width="400" height="500" />
       </div>
     </StyledCanvasContainer>
   );

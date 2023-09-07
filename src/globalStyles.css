@@ -227,6 +227,12 @@ header .btn {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
+@media screen and (max-width: 600px) {  
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 /* --------------- */
 /* -- COMPONENTS --*/
@@ -235,11 +241,17 @@ header .btn {
 /* HOME COMPONENT */
 .home-wrapper {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
-.home-wrapper > .logo {
+@media screen and (max-width: 1000px) {  
+  .home-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* .home-wrapper > .logo {
   padding-right: 1rem;
-}
+} */
 .home-wrapper .logo .logo-section {
   border-radius: var(--card-border-radius);
   background-color: black;
@@ -415,3 +427,6 @@ footer a {
     --card-width: 50%;
   }
 }
+
+
+/*  ----- RESPONSIVE -----  */
