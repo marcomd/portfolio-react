@@ -15,7 +15,7 @@ export default function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="wrapper">
+    <div className="app-wrapper">
         <Header>{t('title')}</Header>
         <ErrorBoundary FallbackComponent={GenericErrorFallback}>
           <div className="main">

@@ -21,7 +21,6 @@
 
   --color-text: #202528;
   --color-text-alternative: #404548;
-  --color-white: #202528;
   --color-background: #dddddd;
   --color-background-alternative: #ffffff;
   --color-light: rgba(0, 0, 0, 0.4);
@@ -45,14 +44,14 @@ body {
   background-color: var(--color-background);
   background-size: cover;
   background-position: center;
-  color: var(--color-white);
+  color: var(--color-text);
   /* -webkit-backdrop-filter: var(--background-filter);
   backdrop-filter: var(--background-filter); */
   font-weight: 200;
 }
 
 body a, body a:visited, body a:hover {
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .dark-mode {
@@ -109,6 +108,10 @@ header > .navigation a {
 header > .navigation a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+header .toggle {
+  color: var(--color-text);
 }
 
 @media screen and (min-width: 1000px) {  
@@ -204,7 +207,7 @@ header .btn {
 }
 
 /* WRAPPER DIVISION */
-.wrapper {
+.app-wrapper {
   /* position: relative;
   width: 100%; */
   height: 100vh;
@@ -217,9 +220,9 @@ header .btn {
 /* MAIN DIVISION */
 .main {
   margin-top: 4rem;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 4rem 2rem;
   width: 80%;
   border: 0.2rem solid var(--color-text);
@@ -229,8 +232,8 @@ header .btn {
 }
 @media screen and (max-width: 600px) {  
   .main {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     width: 99%;
   }
 }
@@ -308,7 +311,7 @@ header .btn {
 
 
 /* PROJECT COMPONENT */
-.projects-wrapper { width: 950px; }
+/* .projects-wrapper { width: 950px; } */
 
 .projects-container { 
   padding: 3rem 0;
@@ -318,21 +321,30 @@ header .btn {
 }
 
 .project-card { 
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 3rem;
   width: var(--card-width);
   width: 100%;
   /* border-left: solid 0.5rem red;
   border-radius: 0.2rem; */
 }
+@media screen and (max-width: 800px) {
+  .project-card { 
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 4rem;
+  }
+}
 
 .project-card > .project-logo {
   padding: 0.5rem 1rem 0.3rem;
   background-color: rgba(200, 200, 200, 0.2);
   border-radius: var(--border-radius-2);
-  margin-right: 1rem;
+  margin: auto;
 }
 
 .project-card > .project-logo > img {
