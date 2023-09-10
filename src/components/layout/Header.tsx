@@ -28,7 +28,7 @@ export default function Header({ children }: Props) {
           <div><button className="toggle" onClick={toggleMenuVisible}><span className="material-icons">close</span></button></div>
         }
         <div>          
-          <Link to="/">{t('menu.home')}</Link>
+          <Link to="/" onClick={() => setMenuVisible(false)}>{t('menu.home')}</Link>
           <Link to="/skills" onClick={() => setMenuVisible(false)}>{t('menu.skills')}</Link>
           <Link to="/projects" onClick={() => setMenuVisible(false)}>{t('menu.projects')}</Link>
           <Link to="/contacts" onClick={() => setMenuVisible(false)}>{t('menu.contacts')}</Link>

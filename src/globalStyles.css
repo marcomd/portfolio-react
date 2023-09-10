@@ -232,7 +232,7 @@ header .btn {
 }
 @media screen and (max-width: 600px) {  
   .main {
-    padding: 5rem 1rem;
+    padding: 5rem 0.8rem;
     width: 99%;
   }
 }
