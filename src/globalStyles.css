@@ -232,8 +232,7 @@ header .btn {
 }
 @media screen and (max-width: 600px) {  
   .main {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding: 5rem 1rem;
     width: 99%;
   }
 }
@@ -369,10 +368,12 @@ header .btn {
 
 
 /* CONTACT COMPONENT */
-.contacts-wrapper { width: 500px; }
+/* .contacts-wrapper { 
+  width: 500px; 
+} */
 
 .contacts-container { 
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 .contacts-container > ul {
@@ -432,14 +433,9 @@ footer a {
 }
 
 
-
-
 /*  ----- MOBILE -----  */
 @media (min-width:600px) {
   :root {
     --card-width: 50%;
   }
 }
-
-
-/*  ----- RESPONSIVE -----  */
