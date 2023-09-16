@@ -40,16 +40,12 @@ export default function LogoCanvas() {
     setTimeout(() => {
       initializeCanvas()
       animate()
-      return () => {
-        setCanvas(null);
-        if (canvasEffect) {
-          window.removeEventListener("mousemove", canvasEffect.dismiss);
-          canvasEffect = null;
-        }
-      }
-    }, 100)
+    }, 300)
 
-    // return () => window.removeEventListener("mousemove", handleMouseMove);
+    return () => { 
+      canvasEffect?.dismiss
+      canvasEffect = null;
+    }
   
   }, [canvas, gap]);
 

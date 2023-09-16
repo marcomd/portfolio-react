@@ -43,10 +43,10 @@
       },
       "ergoprevidenza": {
         "title": "PM & Full Stack developer @Ergo Previdenza",
-        "description": "Management of external suppliers for the provision of corporate services. Implementation of management and RPA software in RubyOnRails to increase administrative users' productivity. Windows and SQL Server. I was part of the team to follow the Solvency 2 legislation."
+        "description": "Management of external suppliers for the provision of corporate services. Implementation of management and RPA software in RubyOnRails and .NET to increase administrative users' productivity. Windows and SQL Server. I was part of the team to follow the Solvency 2 legislation."
       },
       "bayerische": {
-        "title": "Full Stack developer @Bayerische Vita",
+        "title": "Full Stack developer @Bayerische Life",
         "description": "Creation of various applications: for the settlement of life insurance policies in Cobol/Cics and DB2/Vsam. An application for correspondence with customers in VB6 and SQL Server. An application for handling accounting remittances and bank reconciliation of agencies, in VB6. An application for issuing the adequacy form to customers after the purchase of a policy, in PHP. Many othe minor projects."
       },
       "consor": {
@@ -54,7 +54,7 @@
         "description": "I was part of the team that managed a software in the school refectory. In Cobol on AS400 and DB2."
       },
       "ibm": {
-        "title": "Junior software develope @IBM Italia",
+        "title": "Junior software developer @IBM Italy",
         "description": "Vimercate office. I participated in an internal project for the management of corporate material in collaboration with the Lexington office. I also participated in the millennium bug fix on some procedures in PL1/DB2."
       }
     },

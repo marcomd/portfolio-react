@@ -43,7 +43,7 @@
       },
       "ergoprevidenza": {
         "title": "PM & Full Stack developer @Ergo Previdenza",
-        "description": "Gestione di fornitori esterni per la fornitura di servizi aziendali. Realizzazione di gestionali e software RPA in RubyOnRails per incrementare la produttivita' amministrativa. Windows e SQL Server. Facevo parte del team per seguire la normativa Solvency II. "
+        "description": "Gestione di fornitori esterni per la fornitura di servizi aziendali. Realizzazione di gestionali e software RPA in RubyOnRails e .NET per incrementare la produttivita' amministrativa. Windows e SQL Server. Parte del team per la normativa Solvency II. "
       },
       "bayerische": {
         "title": "Full Stack developer @Bayerische Vita",
@@ -54,7 +54,7 @@
         "description": "Ho fatto parte del team che si occupava di gestire un software nella refezione. In Cobol su AS400 e DB2."
       },
       "ibm": {
-        "title": "Junior software develope @IBM Italia",
+        "title": "Junior software developer @IBM Italia",
         "description": "Sede di vimercate. Ho partecipato ad un progetto interno per la gestione di materiale aziendale in collaborazione con la sede di Lexington. Ho anche partecipato alla correzione del millennium bug su alcune procedure in PL1/DB2."
       }
     },
