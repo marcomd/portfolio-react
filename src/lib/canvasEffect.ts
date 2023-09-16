@@ -29,9 +29,9 @@ class Effect {
       radius: 4000
     }
     this.handleMouseMove = (event: MouseEvent) => {
-      this.mouse.x = event.x - left;
-      this.mouse.y = event.y - top;
-      //console.log(`mouse:(${this.mouse.x}, ${this.mouse.y})`);
+      this.mouse.x = event.pageX - left;
+      this.mouse.y = event.pageY - top - 80;
+      // console.log(`mouse:(${this.mouse.x}, ${this.mouse.y}) scroll(x: ${event.pageX}, y:${event.pageY})`);
     };
     window.addEventListener("mousemove", this.handleMouseMove);
   }
