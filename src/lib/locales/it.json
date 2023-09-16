@@ -11,9 +11,10 @@
       "title": "Benvenuti nella mia homepage",
       "introduction": "Sono un senior full stack developer e ho ricoperto anche il ruolo di team lead in vari progetti. Sono piu' orientato alla progettazione di servizi ma ho esperienza anche con web app e progettazione di UI.",
       "career": "Ho lavorato molti anni nel settore assicurativo (17), nel turismo (1 anno), nella domotica (2 anni), nella firma elettronica / vendita di servizi online (3 anni) e altro.",
+      "family": "Ho 47 anni, sono sposato da 19 anni e ho due figli di 16 e 12 anni.",
       "personality": "Sono una persona calma e precisa che raggiunge sempre gli obiettivi. Mi piace lavorare in modo organizzato, puntando sulla qualita'.",
       "hobbies": "Nel mio tempo libero mi piace cucinare, leggere, videogames, musica, serie tv, creare progetti software/hardware e in genere approfondire sulle nuove tecnologie.",
-      "notes": "Ho creato questa webapp da zero, come esperimento provando tecnologie diverse da quelle che uso abitualmente. E' un test e potreste trovare qualche bug che non occorre segnalarmi perche' si tratta di sviluppo continuo."
+      "notes": "Ho creato questa webapp da zero come esperimento."
     },
     "skills": {
       "title": "Le mie competenze",

@@ -29,6 +29,7 @@ export default function Home() {
         <br />
         <div className="body">{t('home.personality')}</div>
         <br />
+        <div className="body">{t('home.family')}</div>
         <br />
         <div className="body">{t('home.hobbies')}</div>
         <br />

@@ -11,9 +11,10 @@
       "title": "Welcome to my homepage",
       "introduction": "I'm a senior full stack developer and I've also held the role of team lead in various projects. I'm more oriented towards service design but I also have experience with web apps and UI design.",
       "career": "I have worked many years in insurance (17), tourism (1 year), home automation (2 years), electronic signature / online service (3 years) and more.",
+      "family": "I am 47 years old, I have been married for 19 years and I have two children aged 16 and 12.",
       "personality": "I am a calm and precise person who always achieves my goals. I like to work in an organized way, focusing on quality.",
       "hobbies": "In my spare time I like cooking, reading, videogames, music, TV series, creating software/hardware projects and generally studying new technologies.",
-      "notes": "I created this webapp from scratch, as an experiment trying different technologies than the ones I usually use. It's a test and you might find some bugs that you don't need to report to me because it's ongoing development."
+      "notes": "I created this webapp from scratch as an experiment."
     },
     "skills": {
       "title": "Superpowers",
