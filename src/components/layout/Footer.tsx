@@ -44,6 +44,8 @@ const iconSize=32
 
 export default function Footer() {
   const { t } = useTranslation();
+  (function (w: any, d: any) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag?.parentNode?.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
+  (function (w: any, d: any) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag?.parentNode?.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
 
   return (
     <footer>
@@ -88,6 +90,10 @@ export default function Footer() {
         </span>
       </div>
       <div className="row">2023 All rights reserved.</div>
+      <div className="row mt-2">
+        <a href="https://www.iubenda.com/privacy-policy/69999769" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a>&nbsp;
+        <a href="https://www.iubenda.com/privacy-policy/69999769/cookie-policy" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a>
+      </div>
     </footer>
   );
 }
