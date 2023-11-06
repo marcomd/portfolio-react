@@ -80,11 +80,11 @@ export default function DarkmodeSelector() {
   <StyledContainer>
     {darkmode ? ( 
       <StyledButton className="dark" onClick={() => performDarkmode(false)}>
-        <span className="material-icons">brightness_5</span>
+        <span className="material-symbols-outlined">brightness_5</span>
       </StyledButton>
       ) : (
       <StyledButton onClick={() => performDarkmode(true)}>
-        <span className="material-icons">nightlight_round</span>
+        <span className="material-symbols-outlined">nightlight_round</span>
       </StyledButton>
       )
     }

@@ -13,7 +13,7 @@
       "career": "Ho lavorato molti anni nel settore assicurativo (17), nel turismo (1 anno), nella domotica (2 anni), nella firma elettronica / vendita di servizi online (3 anni) e altro.",
       "family": "Ho 47 anni, sono sposato da 19 anni e ho due figli di 16 e 12 anni.",
       "personality": "Sono una persona calma e precisa che raggiunge sempre gli obiettivi. Mi piace lavorare in modo organizzato, puntando sulla qualita'.",
-      "hobbies": "Nel mio tempo libero mi piace cucinare, leggere, videogames, musica, serie tv, creare progetti software/hardware e in genere approfondire sulle nuove tecnologie.",
+      "hobbies": "Nel mio tempo libero mi piace il trekking in montagna, cucinare, leggere, i videogames, la musica, progetti software/hardware e in genere approfondire sulle nuove tecnologie.",
       "notes": "Ho creato questa webapp da zero come esperimento."
     },
     "skills": {
@@ -24,7 +24,7 @@
       "title": "I progetti a cui ho lavorato",
       "iubenda_tracking": {
         "title": "Senior Backend Developer @iubenda",
-        "description": "Riferimento del team tracking e del servizio di event delivery. Sviluppo di servizi interni per la gestione di eventi applicativi e per interfacciare servizi esterni. Gestione dei dati su Mysql e Redis."
+        "description": "Sviluppo di servizi interni per il billing, per la gestione di eventi applicativi e per interfacciare servizi esterni, in Ruby on Rails, Mysql e Redis. Ho partecipato alla migrazione ad un nuovo sistema di pricing. Ho gestito e coordinato la migrazione da Zucchetti a Oracle e la migrazione da Segment a Rudderstack. Ho partecipato alla migrazione di una web app da rails 4 a 5. Collaboro col team dei prodotti all'implementazione di servizi API."
       },
       "foodcircle": {
         "title": "Technical Lead & Full Stack Developer @foodcircle",

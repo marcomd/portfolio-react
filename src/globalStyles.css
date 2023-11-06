@@ -95,6 +95,9 @@ header > .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* animation: showMenu 0.4s ease forwards; */
+  /* transition: 2.2s cubic-bezier(.36,-0.01,0,.77); */
+  transition: 1s ease;
 }
 
 header > .navigation a {
@@ -102,7 +105,7 @@ header > .navigation a {
   font-size: 1.1rem;
   color: var(--color-text);
   text-decoration: none;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 header > .navigation a:hover::after {
@@ -114,7 +117,15 @@ header .toggle {
   color: var(--color-text);
 }
 
-@media screen and (min-width: 1000px) {  
+.only-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  header .navigation a {
+    margin-left: 2rem;
+  }
+
   header > .navigation a::after {
     content: '';
     position: absolute;
@@ -149,8 +160,8 @@ header .toggle {
     height: 100vh;
     /* left: -100%; */
     display: none;
-    animation: showMenu 0.4s ease forwards;
     padding: 1rem 2rem;
+    margin-left: -300px;
   }
 
   header > .navigation a::after {
@@ -169,13 +180,13 @@ header .toggle {
 
   header .navigation.visible {
     display: inline;
+    margin-left: 0;
   }
+  
   header .logo {
     margin-left: 1rem;
   }
-  /* header .logo h2 {
-    display: inline;
-  } */
+
   header .navigation a {
     width: 100%;
     display: inline-block;
@@ -183,10 +194,17 @@ header .toggle {
   }
 
   header button.toggle {
-    width: 50px;
     border: none;
     cursor: pointer;
     background-color: transparent;
+  }
+
+  header button.toggle.open {
+    width: 50px;
+  }
+
+  .only-mobile {
+    display: block;
   }
 }
 

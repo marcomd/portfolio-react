@@ -22,16 +22,16 @@ export default function Header({ children }: Props) {
   return (
     <header>
       <h2 className="logo">{children}</h2>
-      <button className="toggle" onClick={toggleMenuVisible}><span className="material-icons">menu</span></button>
+      <button className="toggle open" onClick={toggleMenuVisible}><span className="material-symbols-outlined">menu</span></button>
       <nav className={`navigation ${menuVisible && 'visible'}`}>
-        { menuVisible &&
-          <div><button className="toggle" onClick={toggleMenuVisible}><span className="material-icons">close</span></button></div>
-        }
-        <div>          
-          <Link to="/" onClick={() => setMenuVisible(false)}>{t('menu.home')}</Link>
-          <Link to="/skills" onClick={() => setMenuVisible(false)}>{t('menu.skills')}</Link>
-          <Link to="/projects" onClick={() => setMenuVisible(false)}>{t('menu.projects')}</Link>
-          <Link to="/contacts" onClick={() => setMenuVisible(false)}>{t('menu.contacts')}</Link>
+        <div>
+          { menuVisible &&
+            <button className="toggle" onClick={toggleMenuVisible}><span className="material-symbols-outlined">close</span></button>
+          }
+          <Link to="/" onClick={toggleMenuVisible}><span className="material-symbols-outlined only-mobile">domino_mask</span> &nbsp;{t('menu.home')}</Link>
+          <Link to="/skills" onClick={toggleMenuVisible}><span className="material-symbols-outlined only-mobile">electric_bolt</span> &nbsp;{t('menu.skills')}</Link>
+          <Link to="/projects" onClick={toggleMenuVisible}><span className="material-symbols-outlined only-mobile">cases</span> &nbsp;{t('menu.projects')}</Link>
+          <Link to="/contacts" onClick={toggleMenuVisible}><span className="material-symbols-outlined only-mobile">alternate_email</span> &nbsp;{t('menu.contacts')}</Link>
         </div>
       </nav>
 
